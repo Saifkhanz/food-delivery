@@ -2,14 +2,16 @@
 	<div class="parent">
 		<b-container class="login-container">
 			<b-row>
-				<b-col md="6">
+				<b-col md="4">
 					<!-- Additional content or background image -->
-					<!-- <b-img src="../assets/hs.jpg" alt="Responsive image"></b-img> -->
+					<div class="image-container">
+						<img src="../assets/hs.jpg" alt="Responsive image" />
+					</div>
 				</b-col>
-				<b-col md="6">
+				<b-col md="8">
 					<div>
 						<b-button v-b-toggle.sidebar-right>Login Here</b-button>
-						<b-sidebar id="sidebar-right" title="Sidebar" right shadow>
+						<b-sidebar id="sidebar-right" title="Login" right shadow>
 							<div class="px-3 py-2">
 								<b-form @submit.prevent="start()">
 									<b-form-group label="Email" label-for="email">
@@ -64,4 +66,8 @@ export default {
 	margin: 0 auto;
 	padding: 20px;
 } */
+.image-container {
+	max-width: 10%;
+	height: auto;
+}
 </style>
